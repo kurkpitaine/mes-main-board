@@ -57,7 +57,7 @@ STM32MP257 기반 임베디드 메인보드. DSI→HDMI, GbE, Wi-Fi/BT, eMMC/µS
 
 ## 3. SoftKill Power (ATmega328P)
 
-전원은 **ATX-24**에서 입력되며, 보조 MCU **ATmega328P**가 PSU의 **PS_ON#**과 **PWR_OK**를 제어·감시한다.
+전원은 **ATX-24**에서 입력되며, 보조 MCU **ATmega328P**가 PSU의 PS_ON#과 **PWR_OK**를 제어·감시한다.
 
 ### 3.1 정상 동작 시퀀스
 1. **Power On**: 사용자가 Power SW를 누르면 ATmega가 PS_ON#을 구동하여 PSU를 켬 → **PWR_OK** 감시 → **MPU_WakeUP** 신호 출력.
